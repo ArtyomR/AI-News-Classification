@@ -106,10 +106,12 @@ class BertClassifier:
             print('-' * 10)
 
             if val_acc > best_accuracy:
-                torch.save(self.model, self.model_save_path)
+                #torch.save(self.model, self.model_save_path) #initial version
+                self.model.save_pretrained(self.model_save_path)
                 best_accuracy = val_acc
 
-        self.model = torch.load(self.model_save_path)
+        #self.model = torch.load(self.model_save_path) #intial version
+        self.model = BertForSequenceClassification.from_pretrained(self.model_save_path)
     
     def predict(self, text):
         encoding = self.tokenizer.encode_plus(
