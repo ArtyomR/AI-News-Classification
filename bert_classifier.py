@@ -135,9 +135,9 @@ class BertClassifier:
         attention_mask = out["attention_mask"].to(self.device)
 
         # for debug pirpose
+        print('model:', self.model.device)
         print(input_ids.device)
         print(attention_mask.device)
-        print('model:', self.model.device)
         
         outputs = self.model(
             input_ids=input_ids.unsqueeze(0),
