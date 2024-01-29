@@ -136,9 +136,9 @@ class BertClassifier:
         self.model = self.model.to(self.device) # added by me
 
         # for debug pirpose
-        print('model:', self.model.device)
-        print(input_ids.device)
-        print(attention_mask.device)
+        #print('model:', self.model.device)
+        #print(input_ids.device)
+        #print(attention_mask.device)
         
         outputs = self.model(
             input_ids=input_ids.unsqueeze(0),
