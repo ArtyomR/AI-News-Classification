@@ -15,6 +15,7 @@ to Chinese high technologies. Originally these news were in English or
 Chinese. Then they were translated into Russian by Google translation engine.
 Example of Dataset records is on picture below.
 ![image](https://github.com/ArtyomR/AI-News-Classification/assets/10577827/3cf6b5d7-9847-4daf-acaa-9f5077a02d9a)
+
 After pre-processing and lematization dataset looks like on picture below.
 ![image](https://github.com/ArtyomR/AI-News-Classification/assets/10577827/a6804a5d-0e77-4790-89e6-77892fbd5742)
 There are 1711 (55.48%) 'Not published' news in this dataset and 'Published' news - 1373 (44.52%) in this dataset.
