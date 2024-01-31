@@ -1,4 +1,4 @@
-# News classification with Logistic Regression, BERT and GPT
+# News classification with Logistic Regression, BERT and LLM/GPT
 
 #### Abstract
 In this project I investigated several solutions for News classification.
